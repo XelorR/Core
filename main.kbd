@@ -35,6 +35,22 @@
   nav (tap-hold $tap-time $hold-time spc (layer-toggle nav))
 )
 
+(defchordsv2
+  ;; left side
+  (e r) @eng $hold-time all-released    (        gam gfn sym nav mos)
+  (w e) @rus $hold-time all-released    (        gam gfn sym nav mos)
+  (w r) @<>  $hold-time all-released    (eng rus gam gfn     nav mos)
+  (s f) @brc $hold-time all-released    (eng rus gam gfn     nav mos)
+  ;; right side
+  (u o) @[]  $hold-time all-released    (eng rus gam gfn     nav mos)
+  (j l) @{}  $hold-time all-released    (eng rus gam gfn     nav mos)
+  (m .) @-[] $hold-time all-released    (eng rus gam gfn     nav mos)
+  (i o) @й   $hold-time all-released    (eng     gam gfn sym nav mos)
+  (u i) @ё   $hold-time all-released    (eng     gam gfn sym nav mos)
+  (m ,) @ш   $hold-time all-released    (eng     gam gfn sym nav mos)
+  (, .) @щ   $hold-time all-released    (eng     gam gfn sym nav mos)
+))
+
 (deflayer num
   f12  f7   f8   f9   volu      @/    7    8    9   @fdel
  @f11 @f4  @f5  @f6   vold       -   @h4  @h5  @h6  @hbspc
