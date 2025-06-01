@@ -2,7 +2,7 @@
  @ц   @l*ь @я   @,?  @.!        @з   @в   @к   @lд  @lч
  @hу  @hи  @hе  @hо  @а         @л   @hн  @hт  @hс  @hр
  @ф   @lэ  @х   @lы  @ю         @б   @lм  @п   @г   @д
-                @num @nav       @sym @lang
+                @num @nav       @sym @lan
 )
 
 (defalias

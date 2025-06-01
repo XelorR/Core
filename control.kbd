@@ -1,6 +1,5 @@
 (platform (win winiov2 wintercept linux)
   (defalias
-    lang_switching M-spc
     ctl lctl
 	cmd lmet
     tlft C-S-tab
@@ -18,7 +17,6 @@
 
 (platform (macos)
   (defalias
-    lang_switching C-spc
     ctl lmet
 	cmd lctl
     tlft M-S-[

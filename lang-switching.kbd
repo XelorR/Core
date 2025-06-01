@@ -1,3 +1,14 @@
+(platform (win winiov2 wintercept linux)
+  (defalias
+    lang_switching M-spc
+  )
+)
+(platform (macos)
+  (defalias
+    lang_switching C-spc
+  )
+)
+
 (environment (LANG_COMB "GNOME")
  (defalias
    en_lang caps
@@ -17,7 +28,7 @@
  )
 )
 
-(environment (LANG_MODE M1M2)
+(environment (LANG_MODE SEPARATE)
   (defalias
     en @en_lang ;; should be set manually
     ru @en_lang
@@ -27,12 +38,5 @@
   (defalias
     en @lang_switching ;; system default
     ru @lang_switching
-  )
-)
-
-(defalias
-  lang (switch ((base-layer rus))
-    @en break
-    () @ru break
   )
 )
