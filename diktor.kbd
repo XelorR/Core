@@ -14,26 +14,12 @@
   lч (tap-hold $tap-time $hold-ring @ч (layer-toggle mos))
   lэ (tap-hold $tap-time $hold-ring @э (layer-toggle mos))
 
+  hу (tap-hold $tap-time $hold-pinky @у (multi @cmd (layer-while-held eng)))
+  hи (tap-hold $tap-time $hold-ring @и (multi lalt (layer-while-held eng)))
+  hе (tap-hold $tap-time $hold-middle @е (multi @ctl (layer-while-held eng)))
   hо (tap-hold $tap-time $hold-index @о lsft)
   hн (tap-hold $tap-time $hold-index @н rsft)
-  hи (tap-hold $tap-time $hold-ring @и (multi lalt (layer-while-held eng)))
+  hт (tap-hold-except-keys $tap-time $hold-middle @т (multi @ctl (layer-while-held eng)) (w))
   hс (tap-hold $tap-time $hold-ring @с (multi lalt (layer-while-held eng)))
-)
-
-(platform (macos)
-  (defalias
-    hу (tap-hold $tap-time $hold-pinky @у (multi lctl (layer-while-held eng)))
-    hе (tap-hold $tap-time $hold-middle @е (multi lmet (layer-while-held eng)))
-    hт (tap-hold-except-keys $tap-time $hold-middle @т (multi lmet (layer-while-held eng)) (w))
-    hр (tap-hold $tap-time $hold-pinky @р (multi lctl (layer-while-held eng)))
-  )
-)
-
-(platform (win winiov2 wintercept linux)
-  (defalias
-    hу (tap-hold $tap-time $hold-pinky @у (multi lmet (layer-while-held eng)))
-    hе (tap-hold $tap-time $hold-middle @е (multi lctl (layer-while-held eng)))
-    hт (tap-hold-except-keys $tap-time $hold-middle @т (multi lctl (layer-while-held eng)) (w))
-    hр (tap-hold $tap-time $hold-pinky @р (multi lmet (layer-while-held eng)))
- )
+  hр (tap-hold $tap-time $hold-pinky @р (multi @cmd (layer-while-held eng)))
 )

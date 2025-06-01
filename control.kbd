@@ -1,0 +1,13 @@
+(platform (win winiov2 wintercept linux)
+  (defalias
+    ctl lctl
+	cmd lmet
+  )
+)
+
+(platform (macos)
+  (defalias
+    ctl lmet
+	cmd lctl
+  )
+)

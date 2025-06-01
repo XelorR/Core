@@ -14,26 +14,12 @@
   lq (tap-hold $tap-time $hold-ring q (layer-toggle mos))
   l*' (tap-hold $tap-time $hold-ring @*' (layer-toggle mos))
 
+  hn (tap-hold $tap-time $hold-pinky n @cmd)
+  hr (tap-hold $tap-time $hold-ring r lalt)
+  ht (tap-hold $tap-time $hold-middle t @ctl)
   hs (tap-hold $tap-time $hold-index s lsft)
   hh (tap-hold $tap-time $hold-index h lsft)
-  hr (tap-hold $tap-time $hold-ring r lalt)
+  ha (tap-hold $tap-time $hold-middle a @ctl)
   he (tap-hold $tap-time $hold-ring e lalt)
-)
-
-(platform (win winiov2 wintercept linux)
-  (defalias
-    hn (tap-hold $tap-time $hold-pinky n lmet)
-    ht (tap-hold $tap-time $hold-middle t lctl)
-    ha (tap-hold $tap-time $hold-middle a lctl)
-    hi (tap-hold $tap-time $hold-pinky i lmet)
-  )
-)
-
-(platform (macos)
-  (defalias
-    hn (tap-hold $tap-time $hold-pinky n lctl)
-    ht (tap-hold $tap-time $hold-middle t lmet)
-    ha (tap-hold $tap-time $hold-middle a lmet)
-    hi (tap-hold $tap-time $hold-pinky i lctl)
-  )
+  hi (tap-hold $tap-time $hold-pinky i @cmd)
 )
