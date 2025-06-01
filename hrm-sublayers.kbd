@@ -8,5 +8,14 @@
   h5 (tap-hold $tap-time $hold-middle 5 @ctl)
   h6 (tap-hold $tap-time $hold-ring 6 lalt)
   hbspc (tap-hold $tap-time $hold-pinky @bdel @cmd)
+  ;; sym
+  h! (tap-hold $tap-time $hold-pinky @! @cmd)
+  hlb (tap-hold $tap-time $hold-ring @lb lalt)
+  h- (tap-hold $tap-time $hold-middle @- @ctl)
+  hrb (tap-hold $tap-time $hold-index @rb lsft)
+  h{ (tap-hold $tap-time $hold-index @{ lsft)
+  h; (tap-hold $tap-time $hold-middle @; @ctl)
+  h} (tap-hold $tap-time $hold-ring @} lalt)
+  h? (tap-hold $tap-time $hold-pinky @? @cmd)
 )
 
