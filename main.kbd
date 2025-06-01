@@ -64,7 +64,7 @@
 
 (deflayer mos
  @lrd  _    _    _    _          _    _    _    _    _ 
- @cmd lalt @oct lsft  _          _    _    _    _    _
+ @cmd lalt @ctl lsft  _          _    _    _    _    _
   _    _    _    _    _          _    _    _    _    _
                  _    _          _    _    
 )
