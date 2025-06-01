@@ -39,7 +39,7 @@
         )
         lalt
       ) break
-      () (tap-hold $tap-time (one-shot 500 @ctl) lalt) break
+      () (tap-hold $tap-time $hold-middle (one-shot 500 @ctl) lalt) break
     )
     tlft M-S-[
     trgt M-S-]
