@@ -11,7 +11,7 @@
   lм (tap-hold $tap-time $hold-index @м (layer-toggle num))
   lд (tap-hold $tap-time $hold-ring @д (layer-toggle num))
 
-  lч (tap-hold $tap-time $hold-ring @ч (layer-toggle mos))
+  lч (tap-hold $tap-time $hold-pinky @ч (layer-toggle mos))
   lэ (tap-hold $tap-time $hold-ring @э (layer-toggle mos))
 
   hу (tap-hold $tap-time $hold-pinky @у (multi @cmd (layer-while-held eng)))

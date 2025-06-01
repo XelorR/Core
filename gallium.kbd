@@ -12,7 +12,7 @@
   lu (tap-hold $tap-time $hold-ring u (layer-toggle num))
 
   lq (tap-hold $tap-time $hold-ring q (layer-toggle mos))
-  l*' (tap-hold $tap-time $hold-ring @*' (layer-toggle mos))
+  l*' (tap-hold $tap-time $hold-pinky @*' (layer-toggle mos))
 
   hn (tap-hold $tap-time $hold-pinky n @cmd)
   hr (tap-hold $tap-time $hold-ring r lalt)

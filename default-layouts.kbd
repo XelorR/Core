@@ -1,13 +1,26 @@
 (deflayer qwe
-  _    _    _    _    _          _    _    _    _   @l_
-  _    _    _    _    _          _    _    _    _    _
-  _    _    _    _    _          _    _    _    _    _
+  _   @n1   _    _    _          _    _    _   @n1  @m2
+ @G_  @A_  @C_  @S_   _          _   @S_  @C_  @A_  @G_
+  _   @m1   _   @n2   _          _   @n2   _    _    _
                 @num @nav       @sym @lan
 )
 
 (deflayer jcu
-  _    _    _    _    _          _    _    _    _   @l_
-  _    _    _    _    _          _    _    _    _    _
-  _    _    _    _    _          _    _    _    _    _
+  _   @n1   _    _    _          _    _    _   @n1  @m2
+ @G_  @A_  @C_  @S_   _          _   @S_  @C_  @A_  @G_
+  _   @m1   _   @n2   _          _   @n2   _    _    _
                 @num @nav       @sym @lan
+)
+
+(defalias
+  n1 (tap-hold $tap-time $hold-ring _ (layer-toggle num))
+  n2 (tap-hold $tap-time $hold-index _ (layer-toggle num))
+
+  m1 (tap-hold $tap-time $hold-ring _ (layer-toggle mos))
+  m2 (tap-hold $tap-time $hold-pinky _ (layer-toggle mos))
+
+  G_ (tap-hold $tap-time $hold-pinky _ @cmd)
+  A_ (tap-hold $tap-time $hold-ring _ lalt)
+  C_ (tap-hold $tap-time $hold-middle _ @ctl)
+  S_ (tap-hold $tap-time $hold-index _ lsft)
 )
