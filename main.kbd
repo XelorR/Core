@@ -30,23 +30,23 @@
 (defalias
   qwe (multi (layer-switch qwe) @en)
   jcu (multi (layer-switch jcu) @ru)
+  en_ (multi (layer-switch eng) @en)
+  ru_ (multi (layer-switch rus) @ru)
   eng (switch
     ((base-layer eng)) XX break
     ((base-layer qwe)) XX break
-    ((base-layer rus)) (multi (layer-switch eng) @en) break
+    ((base-layer rus)) @en_ break
     ((base-layer jcu)) @qwe break
     () XX break
   )
   rus (switch
-    ((base-layer eng)) (multi (layer-switch rus) @ru) break
+    ((base-layer eng)) @ru_ break
     ((base-layer qwe)) @jcu break
     ((base-layer rus)) XX break
     ((base-layer jcu)) XX break
     () XX break
   )
   lan (switch
-    ((and (layer nav) (base-layer eng))) (multi (layer-switch eng) @en) break
-    ((and (layer nav) (base-layer rus))) (multi (layer-switch rus) @ru) break
     ((base-layer eng)) @rus break
     ((base-layer qwe)) @jcu break
     ((base-layer rus)) @eng break
@@ -106,6 +106,6 @@
 (deflayer mos
  @lrd  _    _    _    _          _    _    _    _    _ 
  @cmd lalt @ctl lsft  _          _    _    _    _    _
- @qwe @gam @qwe @lan  _          _    _    _    _    _
+ @qwe @gam @qwe @en_  _          _    _    _    _    _
                  _    _          _    _    
 )
