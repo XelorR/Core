@@ -3,6 +3,16 @@
     lang_switching M-spc
     ctl lctl
 	cmd lmet
+    tlft C-S-tab
+    trgt C-tab
+    fdel del  ;; delete text to the right
+    bdel bspc ;; delete text to the left
+    del del   ;; delete objects
+    home home
+    end end
+    pgup pgup
+    pgdn pgdn
+    prnt prnt
   )
 )
 
@@ -11,28 +21,20 @@
     lang_switching C-spc
     ctl lmet
 	cmd lctl
-  )
-)
-
-(environment (LANG_MODE M1M2)
-  (defalias
-    en C-8 ;; instead of lang_switching,
-    ru C-9 ;; you can set separate shortcuts for en/ru
-  )
-)
-(environment (LANG_MODE "")
-  (defalias
-    en @lang_switching ;; instead of lang_switching,
-    ru @lang_switching ;; you can set separate shortcuts for en/ru
+    tlft M-S-[
+    trgt M-S-]
+    fdel C-d  ;; delete text to the right
+    bdel bspc ;; delete text to the left
+    del bspc  ;; delete objects
+    home M-left
+    end M-right
+    pgup (fork pgup @tlft (lmet rmet))
+    pgdn (fork pgdn @trgt (lmet rmet))
+    prnt M-S-4
   )
 )
 
 (defalias
-  lang (switch ((base-layer rus))
-    @en break
-    () @ru break
-  )
-
   cw (switch ((base-layer rus)) (caps-word-custom 2000 (a b c d e f g h i j k l m n o p q r s t u v w x y z , . ' ; [ ]) (bspc del)) break () (caps-word 2000) break )
   rele (multi (release-key lsft) (release-key lalt) (release-key lctl) (release-key lmet) (release-key rsft) (release-key ralt) (release-key rctl) (release-key rmet))
   lrd (tap-dance 300 (lrld @rele))

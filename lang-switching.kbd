@@ -1,0 +1,38 @@
+(environment (LANG_COMB "GNOME")
+ (defalias
+   en_lang caps
+   ru_lang S-caps
+ )
+)
+(environment (LANG_COMB "MAC")
+ (defalias
+   en_lang C-S-8
+   ru_lang C-S-9
+ )
+)
+(environment (LANG_COMB "")
+ (defalias
+   en_lang C-8
+   ru_lang C-9
+ )
+)
+
+(environment (LANG_MODE M1M2)
+  (defalias
+    en @en_lang ;; should be set manually
+    ru @en_lang
+  )
+)
+(environment (LANG_MODE "")
+  (defalias
+    en @lang_switching ;; system default
+    ru @lang_switching
+  )
+)
+
+(defalias
+  lang (switch ((base-layer rus))
+    @en break
+    () @ru break
+  )
+)
