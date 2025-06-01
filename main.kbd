@@ -69,10 +69,10 @@
   (u o) @[]  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
   (j l) @{}  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
   (m .) @-[] $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
-  (i o) @й   $hold-time all-released    (eng     gam gfn sym nav mos qwe jcu)
-  (u i) @ё   $hold-time all-released    (eng     gam gfn sym nav mos qwe jcu)
-  (m ,) @ш   $hold-time all-released    (eng     gam gfn sym nav mos qwe jcu)
-  (, .) @щ   $hold-time all-released    (eng     gam gfn sym nav mos qwe jcu)
+  (i o) @co' $hold-time all-released    (eng     gam gfn sym nav mos qwe    )
+  (u i) @co` $hold-time all-released    (eng     gam gfn sym nav mos qwe    )
+  (m ,) @co[ $hold-time all-released    (eng     gam gfn sym nav mos qwe    )
+  (, .) @co] $hold-time all-released    (eng     gam gfn sym nav mos qwe    )
 )
 
 (deflayer num

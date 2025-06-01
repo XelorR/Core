@@ -22,4 +22,9 @@
   hт (tap-hold-except-keys $tap-time $hold-middle @т (multi @ctl (layer-while-held eng)) (w))
   hс (tap-hold $tap-time $hold-ring @с (multi lalt (layer-while-held eng)))
   hр (tap-hold $tap-time $hold-pinky @р (multi @cmd (layer-while-held eng)))
+
+  co' @й
+  co[ @ш
+  co] @щ
+  co` @ё
 )

@@ -23,4 +23,9 @@
   A_ (tap-hold $tap-time $hold-ring _ lalt)
   C_ (tap-hold $tap-time $hold-middle _ @ctl)
   S_ (tap-hold $tap-time $hold-index _ lsft)
+
+  co' '
+  co[ [
+  co] ]
+  co` grv
 )
