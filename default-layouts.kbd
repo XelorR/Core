@@ -24,8 +24,8 @@
   C_ (tap-hold $tap-time $hold-middle _ @ctl)
   S_ (tap-hold $tap-time $hold-index _ lsft)
 
-  co' '
-  co[ [
-  co] ]
-  co` grv
+  dft_co' '
+  dft_co[ [
+  dft_co] ]
+  dft_co` grv
 )

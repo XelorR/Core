@@ -23,8 +23,8 @@
   hс (tap-hold $tap-time $hold-ring @с (multi lalt (layer-while-held eng)))
   hр (tap-hold $tap-time $hold-pinky @р (multi @cmd (layer-while-held eng)))
 
-  co' @й
-  co[ @ш
-  co] @щ
-  co` @ё
+  rus_co' @й
+  rus_co[ @ш
+  rus_co] @щ
+  rus_co` @ё
 )
