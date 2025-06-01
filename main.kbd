@@ -45,6 +45,8 @@
     () XX break
   )
   lan (switch
+    ((and (layer nav) ((base-layer eng)))) (multi (layer-switch eng) @en) break
+    ((and (layer nav) ((base-layer rus)))) (multi (layer-switch rus) @ru) break
     ((base-layer eng)) @rus break
     ((base-layer qwe)) @jcu break
     ((base-layer rus)) @eng break
@@ -104,6 +106,6 @@
 (deflayer mos
  @lrd  _    _    _    _          _    _    _    _    _ 
  @cmd lalt @ctl lsft  _          _    _    _    _    _
- @qwe @gam @rus @eng  _          _    _    _    _    _
+ @qwe @gam @qwe @lan  _          _    _    _    _    _
                  _    _          _    _    
 )
