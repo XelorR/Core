@@ -37,7 +37,7 @@
     ((base-layer jcu)) @qwe break
     () XX break
   )
-  eng (switch
+  rus (switch
     ((base-layer eng)) (multi (layer-switch rus) @ru) break
     ((base-layer qwe)) @jcu break
     ((base-layer rus)) XX break
