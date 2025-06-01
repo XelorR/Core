@@ -3,7 +3,7 @@
     ctl lctl
     cmd lmet
     opt lalt
-    octl (switch ((base-layer rus))
+    oct (switch ((base-layer rus))
       (tap-hold $tap-time $hold-middle
         (multi
           (one-shot 500 (layer-while-held eng))
@@ -23,6 +23,29 @@
     pgup pgup
     pgdn pgdn
     prnt prnt
+    mnu menu
+
+    udo C-z
+    cut C-x
+    cpy C-c
+    pst C-v
+  )
+)
+
+(platform (win winiov2 wintercept)
+  (defalias
+    rdo C-y
+
+    mcon M-tab
+    af4 A-f4
+  )
+)
+(platform (linux)
+  (defalias
+    rdo C-S-z
+
+    mcon M-w
+    af4 C-q
   )
 )
 
@@ -31,7 +54,7 @@
     ctl lmet
     cmd lctl
     opt (tap-hold $tap-time $hold-ring lalt lmet)
-    octl (switch ((base-layer rus))
+    oct (switch ((base-layer rus))
       (tap-hold $tap-time $hold-middle
         (multi
           (one-shot 500 (layer-while-held eng))
@@ -51,6 +74,16 @@
     pgup (fork pgup @tlft (lmet rmet))
     pgdn (fork pgdn @trgt (lmet rmet))
     prnt M-S-4
+    mnu mrtp
+
+    udo M-z
+    cut M-x
+    cpy M-c
+    pst M-v
+    rdo M-S-z
+
+    mcon C-up
+    af4 M-q
   )
 )
 

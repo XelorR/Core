@@ -24,6 +24,7 @@
 
 (include gallium.kbd) ;; eng
 (include diktor.kbd)  ;; rus
+(include gaming.kbd)  ;; gam
 
 (defalias
   lan (switch ((base-layer rus)) (multi (layer-switch eng) @en) break () (multi (layer-switch rus) @ru) break)
@@ -55,15 +56,15 @@
 )
 
 (deflayer nav
-  _    _    _    _    _          _    _    _    _    _ 
-  _    _    _    _    _          _    _    _    _    _
-  _    _    _    _    _          _    _    _    _    _
-                 _    _          _    _    
+ @del @tlft tab @trgt @af4      ins  @home up   @end @fdel
+ @cmd lalt @oct lsft  @prnt     @mcon left down rght @bdel
+ @udo @cut @cpy @pst  @rdo      mltp @pgup @mnu @pgdn ralt
+                @num  XX        @sym @cw   
 )
 
 (deflayer mos
-  _    _    _    _    _          _    _    _    _    _ 
-  _    _    _    _    _          _    _    _    _    _
+ @lrd  _    _    _    _          _    _    _    _    _ 
+ @cmd lalt @oct lsft  _          _    _    _    _    _
   _    _    _    _    _          _    _    _    _    _
                  _    _          _    _    
 )
