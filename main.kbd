@@ -53,3 +53,17 @@
 (defalias
   lat (tap-hold $tap-time $hold-time @at (layer-toggle num))
 )
+
+(deflayer nav
+  _    _    _    _    _          _    _    _    _    _ 
+  _    _    _    _    _          _    _    _    _    _
+  _    _    _    _    _          _    _    _    _    _
+                 _    _          _    _    
+)
+
+(deflayer mos
+  _    _    _    _    _          _    _    _    _    _ 
+  _    _    _    _    _          _    _    _    _    _
+  _    _    _    _    _          _    _    _    _    _
+                 _    _          _    _    
+)
