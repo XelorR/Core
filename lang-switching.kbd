@@ -31,7 +31,7 @@
 (environment (LANG_MODE SEPARATE)
   (defalias
     en @en_lang ;; should be set manually
-    ru @en_lang
+    ru @ru_lang
   )
 )
 (environment (LANG_MODE "")
