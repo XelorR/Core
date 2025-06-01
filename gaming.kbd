@@ -1,8 +1,8 @@
 (deflayer gam
-  _    _    _    _    _          _    _    _    _    _
-  _    _    _    _    _          _    _    _    _    _
-  _    _    _    _    _          _    _    _    _    _
-                 _    _          _    _    
+  tab  q    w    e    r          y    _    up   @num_ @ltab
+  lsft a    s    d    f          h    left down  rght lsft
+  lctl z    x    c    v          n   @num_  _    _    lctl
+                 _    spc        _    _    
 )
 
 (deflayer gfn
@@ -10,4 +10,9 @@
   _    _    _    _    _          _    _    _    _    _
   _    _    _    _    _          _    _    _    _    _
                  _    _          _    _    
+)
+
+(defalias
+  ltab (tap-hold $tap-time $hold-time tab (layer-toggle mos))
+  num_ (tap-hold $tap-time $hold-time _ (layer-toggle num))
 )
