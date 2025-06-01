@@ -111,6 +111,6 @@
 (deflayer mos
  @lrd  _    _    _    _          _   @mwl @mu  @mwr  _ 
  @cmd lalt @ctl lsft  _          _   @ml  @md  @mr   _
- @qwe @gam @qwe @en_  _         mltp @mwu mrtp @mwd  _
+  XX  @gam @qwe @en_  _         mltp @mwu mrtp @mwd  _
                  _    _         mltp mrtp
 )
