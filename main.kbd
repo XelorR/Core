@@ -109,8 +109,8 @@
 )
 
 (deflayer mos
- @lrd  _    _    _    _          _    _    _    _    _ 
- @cmd lalt @ctl lsft  _          _    _    _    _    _
- @qwe @gam @qwe @en_  _          _    _    _    _    _
-                 _    _          _    _    
+ @lrd  _    _    _    _          _   @mwl @mu  @mwr  _ 
+ @cmd lalt @ctl lsft  _          _   @ml  @md  @mr   _
+ @qwe @gam @qwe @en_  _         mltp @mwu mrtp @mwd  _
+                 _    _         mltp mrtp
 )

@@ -91,4 +91,14 @@
   cw (switch ((base-layer rus)) (caps-word-custom 2000 (a b c d e f g h i j k l m n o p q r s t u v w x y z , . ' ; [ ]) (bspc del)) break () (caps-word 2000) break )
   rele (multi (release-key lsft) (release-key lalt) (release-key lctl) (release-key lmet) (release-key rsft) (release-key ralt) (release-key rctl) (release-key rmet))
   lrd (tap-dance 300 (lrld @rele))
+
+  ;; mouse
+  mu (movemouse-up 1 1)
+  md (movemouse-down 1 1)
+  ml (movemouse-left 1 1)
+  mr (movemouse-right 1 1)
+  mwu (mwheel-up 50 120)
+  mwd (mwheel-down 50 120)
+  mwl (mwheel-left 50 120)
+  mwr (mwheel-right 50 120)
 )
