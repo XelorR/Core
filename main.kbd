@@ -29,6 +29,7 @@
 (include default-layouts.kbd) ;; qwe & jcu
 
 (defalias
+  pla (layer-switch pla)
   qwe (multi (layer-switch qwe) @en)
   jcu (multi (layer-switch jcu) @ru)
   en_ (multi (layer-switch eng) @en)
@@ -67,18 +68,18 @@
 
 (defchordsv2
   ;; left side
-  (e r) @eng $hold-time all-released    (        gam gfn sym nav mos        )
-  (w e) @rus $hold-time all-released    (        gam gfn sym nav mos        )
-  (w r) @<>  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
-  (s f) @brc $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
+  (e r) @eng $hold-time all-released    (        gam gfn sym nav mos         pla)
+  (w e) @rus $hold-time all-released    (        gam gfn sym nav mos         pla)
+  (w r) @<>  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
+  (s f) @brc $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
   ;; right side
-  (u o) @[]  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
-  (j l) @{}  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
-  (m .) @-[] $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
-  (i o) @co' $hold-time all-released    (eng     gam gfn sym nav mos qwe    )
-  (u i) @co` $hold-time all-released    (eng     gam gfn sym nav mos qwe    )
-  (m ,) @co[ $hold-time all-released    (eng     gam gfn sym nav mos qwe    )
-  (, .) @co] $hold-time all-released    (eng     gam gfn sym nav mos qwe    )
+  (u o) @[]  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
+  (j l) @{}  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
+  (m .) @-[] $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
+  (i o) @co' $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
+  (u i) @co` $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
+  (m ,) @co[ $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
+  (, .) @co] $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
 )
 
 (deflayer num
@@ -109,8 +110,8 @@
 )
 
 (deflayer mos
- @lrd  _    _    _    _          _   @mwl @mu  @mwr  _ 
- @cmd lalt @ctl lsft  _          _   @ml  @md  @mr   _
-  XX  @gam @qwe @en_  _         mltp @mwu mrtp @mwd  _
-                 _    _         mltp mrtp
+ @lrd @dr0 @dms @dp0 @af4       slck @mwl @mu  @mwr @fdel 
+ @cmd lalt @ctl lsft  XX        caps @ml  @md  @mr  @bdel
+ @pla @gam @qwe @en_  XX        mltp @mwu mrtp @mwd @lrd
+                @num @nav       mltp mrtp
 )

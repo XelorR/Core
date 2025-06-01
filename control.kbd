@@ -101,4 +101,9 @@
   mwd (mwheel-down 50 120)
   mwl (mwheel-left 50 120)
   mwr (mwheel-right 50 120)
+
+  ;; dynamic macro
+  dr0 (dynamic-macro-record 0)
+  dms dynamic-macro-record-stop
+  dp0 (dynamic-macro-play 0)
 )

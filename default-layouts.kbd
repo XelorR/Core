@@ -12,6 +12,13 @@
                 @num @nav       @sym @lan
 )
 
+(deflayer pla
+  _    _    _    _    _          _    _    _    _   @m2
+  _    _    _    _    _          _    _    _    _    _
+  _    _    _    _    _          _    _    _    _    _
+                 _    _          _    _
+)
+
 (defalias
   n1 (tap-hold $tap-time $hold-ring _ (layer-toggle num))
   n2 (tap-hold $tap-time $hold-index _ (layer-toggle num))
