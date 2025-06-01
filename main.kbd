@@ -1,0 +1,23 @@
+(defsrc
+  q    w    e    r    t          y    u    i    o    p 
+  a    s    d    f    g          h    j    k    l    '
+  z    x    c    v    b          n    m    ,    .    /
+                 esc  spc        ret  caps 
+)
+
+(defcfg concurrent-tap-hold yes)
+(defvar
+  tap-time 200
+  hold-time 200
+
+  hold-index 150
+  hold-middle 150
+  hold-ring 180
+  hold-pinky 195
+)
+
+(include symbols.kbd)
+(include russian-letters.kbd)
+
+(include gallium.kbd) ;; eng
+(include diktor.kbd)  ;; rus
