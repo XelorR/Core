@@ -1,6 +1,6 @@
 (defsrc
   q    w    e    r    t          y    u    i    o    p 
-  a    s    d    f    g          h    j    k    l    '
+  a    s    d    f    g          h    j    k    l    ;
   z    x    c    v    b          n    m    ,    .    /
                  esc  spc        ralt caps 
 )
@@ -22,14 +22,35 @@
 (include russian-letters.kbd)
 (include hrm-sublayers.kbd)
 
-(include gallium.kbd) ;; eng
-(include diktor.kbd)  ;; rus
-(include gaming.kbd)  ;; gam
+(include default-layouts.kbd) ;; qwe & jcu
+(include gallium.kbd)         ;; eng
+(include diktor.kbd)          ;; rus
+(include gaming.kbd)          ;; gam
 
 (defalias
-  lan (switch ((base-layer rus)) (multi (layer-switch eng) @en) break () (multi (layer-switch rus) @ru) break)
-  eng (switch ((base-layer rus)) (multi (layer-switch eng) @en) break () XX break)
-  rus (switch ((base-layer eng)) (multi (layer-switch rus) @ru) break () XX break)
+  qwe (multi (layer-switch qwe) @en)
+  jcu (multi (layer-switch jcu) @ru)
+  eng (switch
+    ((base-layer eng)) XX break
+    ((base-layer qwe)) XX break
+    ((base-layer rus)) (multi (layer-switch eng) @en) break
+    ((base-layer jcu)) @qwe break
+    () XX break
+  )
+  eng (switch
+    ((base-layer eng)) (multi (layer-switch rus) @ru) break
+    ((base-layer qwe)) @jcu break
+    ((base-layer rus)) XX break
+    ((base-layer jcu)) XX break
+    () XX break
+  )
+  lan (switch
+    ((base-layer eng)) @rus break
+    ((base-layer qwe)) @jcu break
+    ((base-layer rus)) @eng break
+    ((base-layer jcu)) @qwe break
+    () XX break
+  )
   gam (layer-switch gam)
   num (tap-hold $tap-time $hold-time esc (layer-toggle num))
   sym (tap-hold $tap-time $hold-time ret (layer-toggle sym))
@@ -39,18 +60,18 @@
 
 (defchordsv2
   ;; left side
-  (e r) @eng $hold-time all-released    (        gam gfn sym nav mos qwe)
-  (w e) @rus $hold-time all-released    (        gam gfn sym nav mos qwe)
-  (w r) @<>  $hold-time all-released    (eng rus gam gfn     nav mos qwe)
-  (s f) @brc $hold-time all-released    (eng rus gam gfn     nav mos qwe)
+  (e r) @eng $hold-time all-released    (        gam gfn sym nav mos qwe jcu)
+  (w e) @rus $hold-time all-released    (        gam gfn sym nav mos qwe jcu)
+  (w r) @<>  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
+  (s f) @brc $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
   ;; right side
-  (u o) @[]  $hold-time all-released    (eng rus gam gfn     nav mos qwe)
-  (j l) @{}  $hold-time all-released    (eng rus gam gfn     nav mos qwe)
-  (m .) @-[] $hold-time all-released    (eng rus gam gfn     nav mos qwe)
-  (i o) @й   $hold-time all-released    (eng     gam gfn sym nav mos qwe)
-  (u i) @ё   $hold-time all-released    (eng     gam gfn sym nav mos qwe)
-  (m ,) @ш   $hold-time all-released    (eng     gam gfn sym nav mos qwe)
-  (, .) @щ   $hold-time all-released    (eng     gam gfn sym nav mos qwe)
+  (u o) @[]  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
+  (j l) @{}  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
+  (m .) @-[] $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu)
+  (i o) @й   $hold-time all-released    (eng     gam gfn sym nav mos qwe jcu)
+  (u i) @ё   $hold-time all-released    (eng     gam gfn sym nav mos qwe jcu)
+  (m ,) @ш   $hold-time all-released    (eng     gam gfn sym nav mos qwe jcu)
+  (, .) @щ   $hold-time all-released    (eng     gam gfn sym nav mos qwe jcu)
 )
 
 (deflayer num
@@ -83,13 +104,6 @@
 (deflayer mos
  @lrd  _    _    _    _          _    _    _    _    _ 
  @cmd lalt @ctl lsft  _          _    _    _    _    _
-  XX  @gam @rus @eng  _          _    _    _    _    _
-                 _    _          _    _    
-)
-
-(deflayer qwe
-  _    _    _    _    _          _    _    _    _   @l_
-  _    _    _    _    _          _    _    _    _    _
-  _    _    _    _    _          _    _    _    _    _
+ @qwe @gam @rus @eng  _          _    _    _    _    _
                  _    _          _    _    
 )
