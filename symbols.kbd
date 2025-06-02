@@ -105,11 +105,11 @@
     “” (macro @“ @“ left)
     '' (macro @' @' left)
     `` (macro @` @` left)
-    brc (macro @lb @rb left)
-    []  (macro @[ @] left)
-    {}  (macro @{ @} left)
-    <>  (macro @< @> left)
-    -[] (macro @home @- spc @[ spc @] spc @end)
+    brc (macro @lb 20 @rb left)
+    []  (macro @[ 20 @] left)
+    {}  (macro @{ 20 @} left)
+    <>  (macro @< 20 @> left)
+    -[] (macro @home 20 @- 20 spc 20 @[ 20 spc 20 @] 20 spc 20 @end)
 
     *' (switch
       ((key-history spc 1)) @“” break
