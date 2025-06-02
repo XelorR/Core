@@ -5,9 +5,9 @@ Elegant and powerful layout for 34 key keyboard
 ## Key Features & Design Principles
 
 - Dual-language support: Seamless English and Russian layouts with custom configurations.
-- Modular layout system: Easily rearrange, add, or create new layouts by modifying existing ones.
-- By making the layout adaptable, you can easily disable or switch to QWERTY/ЙЦУКЕН, making it user-friendly for shared devices.
-- Ergonomic focus: Optimized for 34-key split keyboards, yet fully compatible with traditional staggered layouts.
+- Modular layout system: Easily rearrange, add, or create new layouts by copypasting and modifying existing ones.
+- By making the layout adaptable, you can easily disable the config or switch to QWERTY/ЙЦУКЕН, making it easier to share your PC.
+- Ergonomic focus: Optimized for 34-key split keyboards, yet fully compatible with legacy row staggered keyboards.
 - Intuitive layering: Dedicated Navigation, Symbol, and Numeric layers built around a comfortable 3x3 home block.
 - Consistent symbol access: A unified symbol layer ensures the same symbols are in the same positions for both languages.
 - Firmware flexibility: Simple enough for full implementation with QMK or ZMK, yet powerful enough to surpass QMK Vial's capabilities.
@@ -15,7 +15,7 @@ Elegant and powerful layout for 34 key keyboard
 
 ## Layers pictures and description
 
-- todo
+- Todo. Read [main.kbd](main.kbd) to have a brief understanding of layers available
 
 ## How to:
 
