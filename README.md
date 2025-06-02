@@ -11,7 +11,7 @@ Elegant and powerful layout for 34 key keyboard
 - Ergonomic focus: Optimized for 34-key split keyboards, yet fully compatible with legacy row staggered keyboards.
 - Intuitive layering: Dedicated Navigation, Symbol, and Numeric layers built around a comfortable 3x3 home block.
 - Consistent symbol access: A unified symbol layer ensures the same symbols are in the same positions for both languages.
-- Firmware flexibility: Simple enough for full implementation with QMK or ZMK, yet powerful enough to surpass QMK Vial's capabilities.
+- Firmware flexibility: Simple enough for core functionality implementation with QMK or ZMK, yet powerful enough to surpass QMK Vial's capabilities, especially on seamless crossplatform behavior.
 - Advanced Home Row Mods: Comprehensive home row modifiers with per-finger customization.
 
 ## Layers pictures and description
