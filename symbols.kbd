@@ -111,14 +111,14 @@
     .! (fork @. @! (lsft rsft))
     /\ (fork @/ @\ (lsft rsft))
 
-    “” (switch ((or (base-layer rus) (base-layer qwe))) (macro @“ @“ 15 left) break () (macro S-' 20 S-' 15 left) break)
-    '' (switch ((or (base-layer rus) (base-layer qwe))) (macro @' @' 15 left) break () (macro ' 20 ' 15 left) break)
-    `` (switch ((or (base-layer rus) (base-layer qwe))) (macro @` @` 15 left) break () (macro ` 20 ` 15 left) break)
-    brc (switch ((or (base-layer rus) (base-layer qwe))) (macro @lb 20 @rb 15 left) break () (macro S-9 20 S-0 15 left) break)
-    []  (switch ((or (base-layer rus) (base-layer qwe))) (macro @[ 20 @] 15 left) break () (macro [ 20 ] 15 left) break)
-    {}  (switch ((or (base-layer rus) (base-layer qwe))) (macro @{ 20 @} 15 left) break () (macro S-[ 20 S-] 15 left) break)
-    <>  (switch ((or (base-layer rus) (base-layer qwe))) (macro @< 20 @> 15 left) break () (macro S-, 20 S-. 15 left) break)
-    -[] (switch ((or (base-layer rus) (base-layer qwe))) (macro @home 20 @- 20 spc 20 @[ 20 spc 20 @] 20 spc 20 @end) break () (macro home 15 - 15 spc 15 [ 15 spc 15 ] spc end) break)
+    “” (macro @“ @“ 15 left)
+    '' (macro @' @' 15 left)
+    `` (macro @` @` 15 left)
+    brc (macro @lb 20 @rb 15 left)
+    []  (macro @[ 20 @] 15 left)
+    {}  (macro @{ 20 @} 15 left)
+    <>  (macro @< 20 @> 15 left)
+    -[] (macro @home 20 @- 20 spc 20 @[ 20 spc 20 @] 20 spc 20 @end)
 
     *' (switch
       ((key-history spc 1)) @“” break
