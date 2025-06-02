@@ -73,6 +73,8 @@
     - (fork @u- C-- (lctl rctl))
     u= (unicode =)
     = (fork @u= C-= (lctl rctl))
+    ulb (unicode "(")
+    urb (unicode ")")
     lb (switch ((or (base-layer rus) (base-layer qwe))) (unicode "(") break () S-9 break)
     rb (switch ((or (base-layer rus) (base-layer qwe))) (unicode ")") break () S-0 break)
     u{ (unicode {)
@@ -117,11 +119,11 @@
     “” (macro @u“ @u“ 15 left)
     '' (macro @u' @u' 15 left)
     `` (macro @u` @u` 15 left)
-    brc (macro S-9 20 S-0 15 left)
+    brc (macro @ulb 20 @urb 15 left)
     []  (macro @u[ 20 @u] 15 left)
     {}  (macro @u{ 20 @u} 15 left)
     <>  (macro @u< 20 @u> 15 left)
-    -[] (macro @home 20 - 20 spc 20 @u[ 20 spc 20 @u] 20 spc 20 @end)
+    -[] (macro @home 20 @- 20 spc 20 @u[ 20 spc 20 @u] 20 spc 20 @end)
 
     *' (switch
       ((key-history spc 1)) @“” break
