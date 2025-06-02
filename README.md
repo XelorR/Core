@@ -4,17 +4,16 @@ Elegant and powerful layout for 34 key keyboard
 
 Currently inplemented in [Kanata](https://github.com/jtroo/kanata), but most of the features may be configured with QMK or ZMK keyboards as well.
 
-## Key features and design focus
+## Key Features & Design Principles
 
-- Focus on two languages: English and Russian and custom layouts for both
-- Modular approash for keyboard layouts - rearrange, plug new, create yours by copypasting existent layouts
-- Easy to disable or switch fo qwerty/йцукен in case if you want to share your PC with your grandma
-- Focus on 34 key ergonomic split keyboards, but usable on legacy row sraggeeed devices too
-- Navigation, Symbol and Numeric layers with strong focus on comfortable positiins - 3x3 home block
-- Single symbol layer with same symbol set on the same positions for both languages
-- Simple enough to implement most of the features entirely in your keyboard with QMK or ZMK
-- Powerful enough to be superuor to QMK Vial implementation
-- Home row mods, home row mods everywhere! With separate config for each finger!
+- Dual-language support: Seamless English and Russian layouts with custom configurations.
+- Modular layout system: Easily rearrange, add, or create new layouts by modifying existing ones.
+- By making the layout adaptable, you can easily disable or switch to QWERTY/ЙЦУКЕН, making it user-friendly for shared devices.
+- Ergonomic focus: Optimized for 34-key split keyboards, yet fully compatible with traditional staggered layouts.
+- Intuitive layering: Dedicated Navigation, Symbol, and Numeric layers built around a comfortable 3x3 home block.
+- Consistent symbol access: A unified symbol layer ensures the same symbols are in the same positions for both languages.
+- Firmware flexibility: Simple enough for full implementation with QMK or ZMK, yet powerful enough to surpass QMK Vial's capabilities.
+- Advanced Home Row Mods: Comprehensive home row modifiers with per-finger customization.
 
 ## Layers pictures and description
 
