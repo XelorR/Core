@@ -34,6 +34,7 @@
   ж ;
   ё grv
   *ь (switch
+    ((key-history spc 1)) (macro S-2 20 S-2 20 left) break
     ((key-history e 1)) (macro x i) break ;; у - чш
     () @ьъ break
   )
