@@ -123,7 +123,7 @@
     []  (macro @u[ 20 @u] 15 left)
     {}  (macro @u{ 20 @u} 15 left)
     <>  (macro @u< 20 @u> 15 left)
-    -[] (macro @home 20 @u- 20 spc 20 @u[ 20 spc 20 @u] 20 spc 20 @end)
+    -[] (macro home 20 @u- 20 spc 20 @u[ 20 spc 20 @u] 20 spc 20 end)
 
     *' (switch
       ((key-history spc 1)) @“” break
