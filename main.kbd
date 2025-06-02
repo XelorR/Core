@@ -110,8 +110,8 @@
 )
 
 (deflayer mos
- @lrd @dr0 @dms @dp0 @af4       slck @mwl @mu  @mwr @fdel 
- @cmd lalt @ctl lsft  XX        caps @ml  @md  @mr  @bdel
- @pla @gam @qwe @en_  XX        mltp @mwu mrtp @mwd @lrd
+ @lrd @dr0 @dms @dp0 @zu+       slck @mwl @mu  @mwr @fdel 
+ @cmd lalt @ctl lsft @zu-       caps @ml  @md  @mr  @bdel
+ @pla @gam @qwe @en_ @zu0       mltp @mwu mrtp @mwd @lrd
                 @num @nav       mltp mrtp
 )
