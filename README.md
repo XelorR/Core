@@ -2,6 +2,8 @@
 
 Elegant and powerful layout for 34 key keyboard
 
+Currently inplemented in [Kanata](https://github.com/jtroo/kanata), but most of the features may be configured with QMK or ZMK keyboards as well.
+
 ## Layers pictures and description
 
 - todo
