@@ -98,7 +98,7 @@
     u` (unicode `)
     ` (switch ((or (base-layer rus) (base-layer qwe))) @u` break () grv break)
     at (switch ((or (base-layer rus) (base-layer qwe))) (unicode "@") break () S-2 break)
-    u“ (unicode (unicode r#"""#))
+    u“ (unicode r#"""#)
     “ (switch ((or (base-layer rus) (base-layer qwe))) @u“ break () S-' break)
     : (switch ((or (base-layer rus) (base-layer qwe))) (unicode :) break () S-; break)
     | (switch ((or (base-layer rus) (base-layer qwe))) (unicode |) break () S-\ break)
