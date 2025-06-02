@@ -7,6 +7,7 @@ Elegant and powerful layout for 34 key keyboard
 - Dual-language support: Seamless English and Russian layouts with custom configurations.
 - Modular layout system: Easily rearrange, add, or create new layouts by copypasting and modifying existing ones.
 - By making the layout adaptable, you can easily disable the config or switch to QWERTY/ЙЦУКЕН, making it easier to share your PC.
+- Cross-platform compatibility: Expect consistent behavior across Linux, macOS, and Windows.
 - Ergonomic focus: Optimized for 34-key split keyboards, yet fully compatible with legacy row staggered keyboards.
 - Intuitive layering: Dedicated Navigation, Symbol, and Numeric layers built around a comfortable 3x3 home block.
 - Consistent symbol access: A unified symbol layer ensures the same symbols are in the same positions for both languages.
