@@ -8,6 +8,14 @@ Elegant and powerful layout for 34 key keyboard
 
 ## Example Systemd service
 
+Create file:
+
+```bash
+sudo nano /etc/systemd/system/kanata.service
+```
+
+Ensure specifying path to your config folder:
+
 ```
 [Unit]
 Description=Kanata Keyboard Remapping Service
@@ -21,4 +29,17 @@ User=root
 
 [Install]
 WantedBy=multi-user.target
+```
+
+Enable and start:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now kanata.service
+```
+
+View log real time:
+
+```bash
+journalctl -u kanata.service -f
 ```
