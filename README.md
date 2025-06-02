@@ -14,8 +14,8 @@ Currently inplemented in [Kanata](https://github.com/jtroo/kanata), but most of 
 2. Clone the repo
 3. Arrange your ergo split keyboard keys [as shown in defsrc](main.kbd#L2-L5)
 4. Check and select your keyboard layouts in [main.kbd](main.kbd)
-5. (Optional) set env variables to adjust language switching, check options in [lang-switching.kbd](lang-switching.kbd)
-6. Run or enable service and enjoy!
+5. (Optional) set env variables to adjust language switching, check options in [lang-switching.kbd](lang-switching.kbd). Move row with `(include default-layouts.kbd)` up if you want to use system default layouts (qwerty/йцукен) by some reason.
+6. Run main.kbd config with kanata or enable the service and enjoy!
 7. (Optional) you can still use it on legacy row staggered keyboard, using space and right alt as main thumb keys
 
 ## Example Systemd service
