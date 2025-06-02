@@ -2,9 +2,19 @@
 
 Elegant and powerful layout for 34 key keyboard
 
-## To describe layers and approach
+## Layers pictures and description
 
-- For now, just go through [main.kbd](main.kbd) and all it's includes
+- todo
+
+## How to:
+
+1. Install [Kanata](https://github.com/jtroo/kanata)
+2. Clone the repo
+3. Arrange your ergo split keyboard keys [as shown in defsrc](main.kbd#L2-L5)
+4. Check and select your keyboard layouts in [main.kbd](main.kbd)
+5. (Optional) set env variables to adjust language switching, check options in [lang-switching.kbd](lang-switching.kbd)
+6. Run or enable service and enjoy!
+7. (Optional) you can still use it on legacy row staggered keyboard, using space and right alt as main thumb keys
 
 ## Example Systemd service
 
