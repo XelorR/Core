@@ -70,7 +70,8 @@
   ;; left side
   (e r) @eng $hold-time all-released    (        gam gfn sym nav mos         pla)
   (w e) @rus $hold-time all-released    (        gam gfn sym nav mos         pla)
-  (c v) esc  $hold-time all-released    (        gam gfn sym nav mos         pla)
+  (x c) esc  $hold-time all-released    (        gam gfn sym nav mos         pla)
+  (c v) ret  $hold-time all-released    (        gam gfn sym nav mos         pla)
   (w r) @<>  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
   (s f) @brc $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
   ;; right side
