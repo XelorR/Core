@@ -113,9 +113,9 @@
   *,? (switch
     ((or (key-history . 1) (key-history / 1))) (multi bspc @brc) break
     () @,? break
-
-    u₽ (unicode ₽)
-    ₽ (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 @u₽ 50 ru) break () (macro @u₽) break)
-    $₽ (fork @$ @₽ (lsft rsft))
   )
+
+  u₽ (unicode ₽)
+  ₽ (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 @u₽ 50 @ru) break () (macro @u₽) break)
+  $₽ (fork @$ @₽ (lsft rsft))
 )
