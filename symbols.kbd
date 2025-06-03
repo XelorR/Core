@@ -33,6 +33,8 @@
     / (switch ((or (base-layer rus) (base-layer jcu))) S-\ break () / break )
     \ (unmod \)
     № (switch ((or (base-layer rus) (base-layer jcu))) S-3 break () (macro @ru 50 S-3 50 @en) break)
+  
+    brc (macro S-9 20 S-0 20 left)
   )
 )
 
@@ -85,6 +87,8 @@
     / (switch ((or (base-layer rus) (base-layer jcu))) (unicode /) break () / break)
     \ (switch ((or (base-layer rus) (base-layer jcu))) (unicode \) break () \ break)
     № (unicode №)
+
+    brc (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 @ulb 20 @urb 20 left 50 @ru) break () (macro @ulb 20 @urb 20 left) break )
   )
 )
 
@@ -96,7 +100,6 @@
   “” (switch ((or (base-layer rus) (base-layer jcu))) (macro S-2 20 S-2 20 left) break () (macro S-' 20 S-' 20 left) break )
   '' (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 ' 20 ' 20 left  50 @ru) break () (macro ' 20 ' 20 left) break )
   `` (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 ` 20 ` 20 left  50 @ru) break () (macro ` 20 ` 20 left) break )
-  brc (macro S-9 20 S-0 20 left)
   []  (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 [ 20 ] 20 left 50 @ru) break () (macro [ 20 ] 20 left) break )
   {}  (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 S-[ 20 S-] 20 left 50 @ru) break () (macro S-[ 20 S-] 20 left) break )
   <>  (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 S-, 20 S-. 20 left 50 @ru) break () (macro S-, 20 S-. 20 left) break )
