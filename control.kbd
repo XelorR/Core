@@ -80,15 +80,15 @@
     prnt M-S-4
     mnu mrtp
 
+    zu+ M-=
+    zu- M--
+    zu0 M-0
+
     udo M-z
     cut M-x
     cpy M-c
     pst M-v
     rdo M-S-z
-
-    zu+ M-=
-    zu- M--
-    zu0 M-0
 
     mcon C-up
     af4 M-q
