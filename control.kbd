@@ -25,6 +25,10 @@
     prnt prnt
     mnu menu
 
+    zu+ C-=
+    zu- C--
+    zu0 C-0
+
     udo C-z
     cut C-x
     cpy C-c
@@ -81,6 +85,10 @@
     cpy M-c
     pst M-v
     rdo M-S-z
+
+    zu+ M-=
+    zu- M--
+    zu0 M-0
 
     mcon C-up
     af4 M-q
