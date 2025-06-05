@@ -105,15 +105,15 @@
 )
 
 (deflayer nav
- @del @tlft tab @trgt @af4      ins  @home up   @end @fdel
- @cmd lalt @oct lsft  @prnt     @mcon left down rght @bdel
- @udo @cut @cpy @pst  @rdo      mltp @pgup @mnu @pgdn ralt
+ @del @tlft tab @trgt @af4       esc @home up   @end  @fdel
+ @cmd lalt @oct lsft  @prnt      ret  left down  rght @bdel
+ @udo @cut @cpy @pst  @rdo       tab @pgup @mnu @pgdn @mcon
                 @num  XX        @sym @cw   
 )
 
 (deflayer mos
  @lrd @dr0 @dms @dp0 @zu+       slck @mwl @mu  @mwr @fdel 
- @cmd lalt @ctl lsft @zu-       caps @ml  @md  @mr  @bdel
- @pla @gam @qwe @en_ @zu0       mltp @mwu mrtp @mwd @lrd
+ @cmd lalt @ctl lsft @zu-       ins  @ml  @md  @mr  @bdel
+ @pla @gam @qwe @en_ @zu0       caps @mwu mrtp @mwd @lrd
                 @num @nav       mltp mrtp
 )
