@@ -108,7 +108,10 @@
  @del @tlft tab @trgt @af4       esc @home up   @end  @fdel
  @cmd lalt @oct lsft  @prnt      ret  left down  rght @bdel
  @udo @cut @cpy @pst  @rdo       tab @pgup @mnu @pgdn @mcon
-                @num  XX        @sym @cw   
+                @num  XX        @lcw @cw   
+)
+(defalias
+  lcw (tap-hold $tap-time $hold-time @cw (layer-toggle sym))
 )
 
 (deflayer mos
