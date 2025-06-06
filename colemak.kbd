@@ -1,4 +1,4 @@
-(deflayer eng ;; Gallium
+(deflayer eng ;; Colemak
   q   @lw   f    p    g          j    l    u   @ly  @l*'
  @ha  @hr  @hs  @ht   d          h   @hn  @he  @hi  @ho
   z   @lx   c   @lv   b          k   @lm  @*,? @.!  @/\
