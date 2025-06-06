@@ -95,13 +95,10 @@
 )
 
 (deflayer sym
- @№   @<   @=   @>   @`         @'   @[   @“   @]   @^
- @h!  @hlb @h-  @hrb @+         @$₽  @h{  @h;  @h}  @h?
- @%   @~   @:   @/\  @#         @*   @|   @_   @&   @\
-                @lat @nav        XX  @.
-)
-(defalias
-  lat (tap-hold $tap-time $hold-time @at (layer-toggle num))
+ @at№ @<at @=$  @>#  @$₽        @^   @[~  @_^  @]`  @`
+ @h\  @hlb @h-“ @hrb @+         @%   @h{  @h;  @h}  @h!
+ @#   @*   @:   @/\  @“         @'   @|   @~   @&   @?
+                @num @nav        XX  @.
 )
 
 (deflayer nav
