@@ -75,13 +75,13 @@
   (w r) @<>  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
   (s f) @brc $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
   ;; right side
-  (u o) @[]  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
-  (j l) @{}  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
-  (m .) @-[] $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
-  (i o) @co' $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
-  (u i) @co` $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
-  (m ,) @co[ $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
-  (, .) @co] $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
+  (i p) @[]  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
+  (k ;) @{}  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
+  (, /) @-[] $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla)
+  (o p) @co' $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
+  (i o) @co` $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
+  (, .) @co[ $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
+  (. /) @co] $hold-time all-released    (eng     gam gfn sym nav mos qwe     pla)
 )
 
 (deflayer num
