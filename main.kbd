@@ -35,19 +35,19 @@
   en_ (multi (layer-switch eng) @en)
   ru_ (multi (layer-switch rus) @ru)
   eng (switch
+    ((base-layer num2)) @en_ break
     ((base-layer eng)) XX break
     ((base-layer qwe)) XX break
     ((base-layer rus)) @en_ break
     ((base-layer jcu)) @qwe break
-    ((base-layer num2)) @en_ break
     () XX break
   )
   rus (switch
+    ((base-layer num2)) @ru_ break
     ((base-layer eng)) @ru_ break
     ((base-layer qwe)) @jcu break
     ((base-layer rus)) XX break
     ((base-layer jcu)) XX break
-    ((base-layer num2)) @ru_ break
     () XX break
   )
   lan (switch
