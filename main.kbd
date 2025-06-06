@@ -98,10 +98,13 @@
 )
 
 (deflayer num2
-  -    5    2    3   @:          _    _    _    _    @fdel
+  -    5    2    3   @:          _    _    _    _    @ldel
   7   @.    1    0    4          _    lsft @ctl lalt @hbspc
  @,    6    9    8    ret        _    _    _    _    _
                 @fun @nav        XX   XX
+)
+(defalias
+  ldel (tap-hold $tap-time $hold-time @fdel (layer-toggle mos))
 )
 
 (deflayer sym
