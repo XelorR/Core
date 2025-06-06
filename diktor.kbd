@@ -8,7 +8,7 @@
 (defalias
   l*ь (tap-hold $tap-time $hold-ring @*ь (layer-toggle num))
   lы (tap-hold $tap-time $hold-index @ы (layer-toggle num))
-  lм (tap-hold $tap-time $hold-index @м (layer-toggle num))
+  lм (tap-hold $tap-time $hold-index @м (layer-toggle num2))
   lд (tap-hold $tap-time $hold-ring @д (layer-toggle num))
 
   lч (tap-hold $tap-time $hold-pinky @ч (layer-toggle mos))

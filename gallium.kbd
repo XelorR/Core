@@ -8,7 +8,7 @@
 (defalias
   ll (tap-hold $tap-time $hold-ring l (layer-toggle num))
   lw (tap-hold $tap-time $hold-index w (layer-toggle num))
-  lp (tap-hold $tap-time $hold-index p (layer-toggle num))
+  lp (tap-hold $tap-time $hold-index p (layer-toggle num2))
   lu (tap-hold $tap-time $hold-ring u (layer-toggle num))
 
   lq (tap-hold $tap-time $hold-ring q (layer-toggle mos))

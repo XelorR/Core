@@ -21,7 +21,7 @@
 
 (defalias
   n1 (tap-hold $tap-time $hold-ring _ (layer-toggle num))
-  n2 (tap-hold $tap-time $hold-index _ (layer-toggle num))
+  n2 (tap-hold $tap-time $hold-index _ (layer-toggle num2))
 
   m1 (tap-hold $tap-time $hold-ring _ (layer-toggle mos))
   m2 (tap-hold $tap-time $hold-pinky _ (layer-toggle mos))

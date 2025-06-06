@@ -94,6 +94,13 @@
   l0 (tap-hold $tap-time $hold-time 0 (layer-toggle sym))
 )
 
+(deflayer num2
+  -    5    2    3   @:          _    _    _    _    @fdel
+  7   @.    1    0    4          _    lsft @ctl lalt @hbspc
+ @,    6    9    8    ret        _    _    _    _    _
+                @fun @nav        XX   XX
+)
+
 (deflayer sym
  @at№ @<at @=$  @>#  @$₽        @^   @[~  @_^  @]`  @`
  @h\  @hlb @h-“ @hrb @+         @%   @h{  @h;  @h}  @h!
