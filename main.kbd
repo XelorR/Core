@@ -39,6 +39,7 @@
     ((base-layer qwe)) XX break
     ((base-layer rus)) @en_ break
     ((base-layer jcu)) @qwe break
+    ((base-layer num2)) @qwe break
     () XX break
   )
   rus (switch
@@ -46,6 +47,7 @@
     ((base-layer qwe)) @jcu break
     ((base-layer rus)) XX break
     ((base-layer jcu)) XX break
+    ((base-layer num2)) @ru_ break
     () XX break
   )
   lan (switch
@@ -71,7 +73,7 @@
   ;; left side
   (e r) @eng $hold-time all-released    (        gam gfn sym nav mos         pla     )
   (w e) @rus $hold-time all-released    (        gam gfn sym nav mos         pla     )
-  (x c) @nm2 $hold-time all-released    (        gam gfn sym nav mos         pla     )
+  (x c) @nm2 $hold-time all-released    (        gam gfn sym nav mos         pla num2)
   (c v) ret  $hold-time all-released    (        gam gfn sym nav mos         pla num2)
   (w r) @<>  $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla     )
   (s f) @brc $hold-time all-released    (eng rus gam gfn     nav mos qwe jcu pla     )
