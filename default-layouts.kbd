@@ -1,7 +1,7 @@
 (deflayer qwe
-  _   @n1   _    _    _          _    _    _   @n1  @m2
- @G_  @A_  @C_  @S_   _          _   @S_  @C_  @A_  @G_
-  _   @m1   _   @n2   _          _   @n2   _    _    _
+  _   @n1   _    _    _          _    _   @n1  @m2   _
+ @G_  @A_  @C_  @S_   _         @S_  @C_  @A_  @G_   _
+  _   @m1   _   @n2   _         @n2   _    _    _    _
                 @num @nav       @sym @lan
 )
 
