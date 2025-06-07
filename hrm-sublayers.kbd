@@ -13,14 +13,14 @@
 ;; sym
 (platform (win winiov2 wintercept)
   (defalias
-    h\  (switch ((or (base-layer rus) (base-layer jcu))) @\  break () (tap-hold $tap-time $hold-pinky @\ @cmd)  break)
-    hlb (switch ((or (base-layer rus) (base-layer jcu))) @lb break () (tap-hold $tap-time $hold-ring @lb lalt)  break)
-    h-  (switch ((or (base-layer rus) (base-layer jcu))) @-  break () (tap-hold $tap-time $hold-middle @- @ctl) break)
-    hrb (switch ((or (base-layer rus) (base-layer jcu))) @rb break () (tap-hold $tap-time $hold-index @rb lsft) break)
-    h{  (switch ((or (base-layer rus) (base-layer jcu))) @{  break () (tap-hold $tap-time $hold-index @{ lsft)  break)
-    h;  (switch ((or (base-layer rus) (base-layer jcu))) @;  break () (tap-hold $tap-time $hold-middle @; @ctl) break)
-    h}  (switch ((or (base-layer rus) (base-layer jcu))) @}  break () (tap-hold $tap-time $hold-ring @} lalt)   break)
-    h!  (switch ((or (base-layer rus) (base-layer jcu))) @!  break () (tap-hold $tap-time $hold-pinky @! @cmd)  break)
+    h\  @\
+    hlb @lb
+    h-  @-
+    hrb @rb
+    h{  @{
+    h;  @;
+    h}  @}
+    h!  @!
   )
 )
 (platform (macos linux)
