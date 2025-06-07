@@ -22,11 +22,11 @@
 (include russian-letters.kbd)
 (include hrm-sublayers.kbd)
 
+(include default-layouts.kbd) ;; qwe & jcu
 (include colemak.kbd)         ;; eng
 ;; (include gallium.kbd)         ;; eng
 (include diktor.kbd)          ;; rus
 (include gaming.kbd)          ;; gam
-(include default-layouts.kbd) ;; qwe & jcu
 
 (defalias
   pla (layer-switch pla)
