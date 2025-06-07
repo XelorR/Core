@@ -11,28 +11,13 @@
 )
 
 ;; sym
-(platform (win winiov2 wintercept)
-  (defalias
-    h\  @\
-    hlb @lb
-    h-  @-
-    hrb @rb
-    h{  @{
-    h;  @;
-    h}  @}
-    h!  @!
-  )
+(defalias
+  h\ (tap-hold $tap-time $hold-pinky @\ @cmd)
+  hlb (tap-hold $tap-time $hold-ring @lb lalt)
+  h- (tap-hold $tap-time $hold-middle @- @ctl)
+  hrb (tap-hold $tap-time $hold-index @rb lsft)
+  h{ (tap-hold $tap-time $hold-index @{ lsft)
+  h; (tap-hold $tap-time $hold-middle @; @ctl)
+  h} (tap-hold $tap-time $hold-ring @} lalt)
+  h! (tap-hold $tap-time $hold-pinky @! @cmd)
 )
-(platform (macos linux)
-  (defalias
-    h\ (tap-hold $tap-time $hold-pinky @\ @cmd)
-    hlb (tap-hold $tap-time $hold-ring @lb lalt)
-    h- (tap-hold $tap-time $hold-middle @- @ctl)
-    hrb (tap-hold $tap-time $hold-index @rb lsft)
-    h{ (tap-hold $tap-time $hold-index @{ lsft)
-    h; (tap-hold $tap-time $hold-middle @; @ctl)
-    h} (tap-hold $tap-time $hold-ring @} lalt)
-    h! (tap-hold $tap-time $hold-pinky @! @cmd)
-  )
-)
-
