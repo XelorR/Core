@@ -7,7 +7,7 @@
 
 (defcfg concurrent-tap-hold yes)
 (defvar
-  tap-time 200
+  tap-time 190
   hold-time 200
 
   hold-index 150
