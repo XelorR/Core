@@ -1,5 +1,4 @@
-(platform (macos linux)
-  (defalias
+(defalias
     % S-5
     + S-=
     * S-8
@@ -35,61 +34,6 @@
     № (switch ((or (base-layer rus) (base-layer jcu))) S-3 break () (macro @ru 50 S-3 50 @en) break)
   
     brc (macro S-9 20 S-0 20 left)
-  )
-)
-
-(platform (win winiov2 wintercept)
-  (defalias
-    % (switch ((or (base-layer rus) (base-layer jcu))) (unicode %) break () S-5 break)
-    u+ (unicode +)
-    + (switch ((or (base-layer rus) (base-layer jcu))) (fork @u+ C-S-= (lctl rctl)) break () S-= break)
-    * (switch ((or (base-layer rus) (base-layer jcu))) (unicode *) break () S-8 break)
-    _ (switch ((or (base-layer rus) (base-layer jcu))) (unicode _) break () S-- break)
-    u- (unicode -)
-    - (fork @u- C-- (lctl rctl))
-    u= (unicode =)
-    = (fork @u= C-= (lctl rctl))
-    ulb (unicode "(")
-    urb (unicode ")")
-    lb (switch ((or (base-layer rus) (base-layer jcu))) (unicode "(") break () S-9 break)
-    rb (switch ((or (base-layer rus) (base-layer jcu))) (unicode ")") break () S-0 break)
-    u{ (unicode {)
-    { (switch ((or (base-layer rus) (base-layer jcu))) (fork @u{ C-S-[ (lctl rctl)) break () S-[ break)
-    ; (switch ((or (base-layer rus) (base-layer jcu))) (unicode ;) break () ; break)
-    u} (unicode })
-    } (switch ((or (base-layer rus) (base-layer jcu))) (fork @u} C-S-] (lctl rctl)) break () S-] break)
-    ! (switch ((or (base-layer rus) (base-layer jcu))) (unicode !) break () S-1 break)
-    # (switch ((or (base-layer rus) (base-layer jcu))) (unicode #) break () S-3 break)
-    $ (switch ((or (base-layer rus) (base-layer jcu))) (unicode $) break () S-4 break)
-    & (switch ((or (base-layer rus) (base-layer jcu))) (unicode &) break () S-7 break)
-    u' (unicode ')
-    ' (switch ((or (base-layer rus) (base-layer jcu))) @u' break () ' break)
-    u< (unicode <)
-    u> (unicode >)
-    < (switch ((or (base-layer rus) (base-layer jcu))) (fork @u< C-S-, (lctl rctl)) break () S-, break)
-    > (switch ((or (base-layer rus) (base-layer jcu))) (fork @u> C-S-. (lctl rctl)) break () S-. break)
-    u[ (unicode [)
-    u] (unicode ])
-    [ (switch ((or (base-layer rus) (base-layer jcu))) (fork @u[ C-[ (lctl rctl)) break () [ break)
-    ] (switch ((or (base-layer rus) (base-layer jcu))) (fork @u] C-] (lctl rctl)) break () ] break)
-    ^ (switch ((or (base-layer rus) (base-layer jcu))) (unicode ^) break () S-6 break)
-    u` (unicode `)
-    ` (switch ((or (base-layer rus) (base-layer jcu))) @u` break () grv break)
-    at (switch ((or (base-layer rus) (base-layer jcu))) (unicode "@") break () S-2 break)
-    u“ (unicode r#"""#)
-    “ (switch ((or (base-layer rus) (base-layer jcu))) @u“ break () S-' break)
-    : (switch ((or (base-layer rus) (base-layer jcu))) (unicode :) break () S-; break)
-    | (switch ((or (base-layer rus) (base-layer jcu))) (unicode |) break () S-\ break)
-    ~ (switch ((or (base-layer rus) (base-layer jcu))) (unicode ~) break () S-grv break)
-    , (switch ((or (base-layer rus) (base-layer jcu))) (unicode ,) break () , break)
-    . (switch ((or (base-layer rus) (base-layer jcu))) (unicode .) break () . break)
-    ? (switch ((or (base-layer rus) (base-layer jcu))) (unicode ?) break () S-/ break)
-    / (switch ((or (base-layer rus) (base-layer jcu))) (unicode /) break () / break)
-    \ (switch ((or (base-layer rus) (base-layer jcu))) (unicode \) break () \ break)
-    № (unicode №)
-
-    brc (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 @ulb 20 @urb 20 left 50 @ru) break () (macro @ulb 20 @urb 20 left) break )
-  )
 )
 
 (defalias
