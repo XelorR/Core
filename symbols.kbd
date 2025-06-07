@@ -3,8 +3,8 @@
     + S-=
     * S-8
     _ S--
-    - (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 - 50 @ru) break () (unmod -) break)
-    = (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 = 50 @ru) break () (unmod =) break)
+    - (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 - @50 rus) break () (unmod -) break)
+    = (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 = @50 rus) break () (unmod =) break)
     lb S-9
     rb S-0
     { (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 S-[ 50 @ru) break () S-[ break )
