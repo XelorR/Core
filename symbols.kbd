@@ -3,8 +3,8 @@
     + S-=
     * S-8
     _ S--
-    - -
-    = =
+    - (unmod -)
+    = (unmod =)
     lb S-9
     rb S-0
     { (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 S-[ 50 @ru) break () S-[ break )
@@ -66,11 +66,5 @@
   ₽ (switch ((or (base-layer rus) (base-layer jcu))) (macro @en 50 @u₽ 50 @ru) break () (macro @u₽) break)
   $₽ (fork @$ @₽ (lsft rsft))
   at№ (fork @at @№ (lsft rsft))
-  =$ (fork @= @$ (lsft rsft))
-  <at  (fork @< @at (lsft rsft))
-  -“  (fork @- @“ (lsft rsft))
-  >#  (fork @> @# (lsft rsft))
-  [~  (fork @[ @~ (lsft rsft))
-  ]`  (fork @] @` (lsft rsft))
-  _^  (fork @_ @^ (lsft rsft))
+  =“  (fork @= @“ (lsft rsft))
 )

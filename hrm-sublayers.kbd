@@ -11,7 +11,7 @@
   ;; sym
   h\ (tap-hold $tap-time $hold-pinky @\ @cmd)
   hlb (tap-hold $tap-time $hold-ring @lb lalt)
-  h-“ (tap-hold $tap-time $hold-middle @-“ @ctl)
+  h- (tap-hold $tap-time $hold-middle @- @ctl)
   hrb (tap-hold $tap-time $hold-index @rb lsft)
   h{ (tap-hold $tap-time $hold-index @{ lsft)
   h; (tap-hold $tap-time $hold-middle @; @ctl)
