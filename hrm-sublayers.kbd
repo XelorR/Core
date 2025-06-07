@@ -10,8 +10,8 @@
   hbspc (tap-hold $tap-time $hold-pinky @bdel @cmd)
 )
 
-;; sym
 (defalias
+  ;; sym
   h\ (tap-hold $tap-time $hold-pinky @\ @cmd)
   hlb (tap-hold $tap-time $hold-ring @lb lalt)
   h- (tap-hold $tap-time $hold-middle @- @ctl)
