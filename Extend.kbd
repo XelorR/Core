@@ -35,10 +35,10 @@ _ _ _
 )
 
 (deflayer nav
-f1   f2       f3    f4       f5  f6  f7   f8   f9   f10  f11 f12
-A-f4 C-S-tab  tab   C-tab    esc esc home up   end  lrld
-lmet lalt     lctl  lsft     rer ret left down rght bspc
-del  C-M-left M-tab C-M-rght tab tab pgup menu pgdn del
+f1   f2       f3    f4       f5   f6  f7   f8   f9   f10  f11 f12
+A-f4 C-S-tab  tab   C-tab    esc  esc home up   end  lrld
+lmet lalt     lctl  lsft     ret  ret left down rght bspc
+del  C-M-left M-tab C-M-rght prnt tab pgup menu pgdn del
 @cw XX
 rctl rmet ralt
 )
