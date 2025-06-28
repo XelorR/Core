@@ -34,13 +34,37 @@ _ _ _ _ _ _ _ _ _ _
 _ _ _
 )
 
+(platform (win winiov2 wintercept)
 (deflayer nav
-f1   f2       f3    f4       f5   f6  f7   f8   f9   f10  f11 f12
-A-f4 C-S-tab  tab   C-tab    esc  esc home up   end  lrld
-lmet lalt     lctl  lsft     ret  ret left down rght bspc
-del  C-M-left M-tab C-M-rght prnt tab pgup menu pgdn del
+f1   f2       f3    f4       f5    f6  f7   f8   f9   f10  f11 f12
+A-f4 C-S-tab  tab   C-tab    esc   esc home up   end  lrld
+lmet lalt     lctl  lsft     prnt  ret left down rght bspc
+del  C-M-left M-tab C-M-rght lmet  tab pgup menu pgdn del
 @cw XX
 rctl rmet ralt
+)
+)
+
+(platform (linux)
+(deflayer nav
+f1   f2       f3    f4       f5    f6  f7   f8   f9   f10  f11 f12
+C-q  C-S-tab  tab   C-tab    esc   esc home up   end  lrld
+lmet lalt     lctl  lsft     prnt  ret left down rght bspc
+del  C-M-left M-w   C-M-rght A-spc tab pgup menu pgdn del
+@cw XX
+rctl rmet ralt
+)
+)
+
+(platform (macos)
+(deflayer nav
+f1   f2       f3    f4       f5    f6  f7   f8   f9   f10  f11 f12
+M-q  M-S-[    tab   M-S-]    esc   esc M-left up M-rght lrld
+lctl lmet     lalt  lsft     M-S-4 ret left down rght bspc
+bspc C-left   C-up  C-rght   M-spc tab pgup menu pgdn del
+@cw XX
+rctl rmet ralt
+)
 )
 
 (deflayer switcher
