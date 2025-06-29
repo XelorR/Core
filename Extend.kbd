@@ -77,8 +77,8 @@ _ _ _
 )
 
 (defalias
-C-8 en
-C-9 ru
+en C-8
+ru C-9
 eng (tap-hold 200 195 (multi (layer-switch eng) @en) (layer-while-held switcher))
 rus (tap-hold 200 195 (multi (layer-switch rus) @ru) (layer-while-held switcher))
 nor (multi (layer-switch noremap) @en)
