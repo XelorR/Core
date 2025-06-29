@@ -7,6 +7,24 @@ caps spc
 lctl lmet lalt
 )
 
+(deflayer noremap
+_ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _
+@cap _
+_ _ _
+)
+
+(deflayer switcher
+_ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _
+_ @nor @rus @eng _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _
+_ _
+_ _ _
+)
+
 (deflayer eng ;; Colemak
 _ _ _ _ _ _ _ _ _ _ _ _
 _ _ f p g j l u y ;
@@ -23,15 +41,6 @@ _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
 @eng @spc
 @ctl @met @alt
-)
-
-(deflayer noremap
-_ _ _ _ _ _ _ _ _ _ _ _
-_ _ _ _ _ _ _ _ _ _
-_ _ _ _ _ _ _ _ _ _
-_ _ _ _ _ _ _ _ _ _
-@cap _
-_ _ _
 )
 
 (platform (win winiov2 wintercept)
@@ -65,15 +74,6 @@ bspc C-left   C-up  C-rght   M-spc tab pgup menu pgdn del
 @cw XX
 rctl rmet ralt
 )
-)
-
-(deflayer switcher
-_ _ _ _ _ _ _ _ _ _ _ _
-_ _ _ _ _ _ _ _ _ _
-_ @nor @rus @eng _ _ _ _ _ _
-_ _ _ _ _ _ _ _ _ _
-_ _
-_ _ _
 )
 
 (defalias
