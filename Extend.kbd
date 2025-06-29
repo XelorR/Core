@@ -52,6 +52,10 @@ del  vold    mute volu  M-tab    tab pgup menu pgdn del
 @cw XX
 rctl rmet ralt
 )
+(defalias
+en C-8
+ru C-9
+)
 )
 
 (platform (linux) ;; KDE Plasma
@@ -62,6 +66,10 @@ lmet lalt    lctl lsft  prnt     ret left down rght bspc
 del  vold    mute volu  M-w      tab pgup menu pgdn del
 @cw XX
 rctl rmet ralt
+)
+(defalias
+en C-8
+ru C-9
 )
 )
 
@@ -74,11 +82,13 @@ bspc vold    mute volu  C-up     tab pgup menu pgdn del
 @cw XX
 rctl rmet ralt
 )
+(defalias
+en C-S-8
+ru C-S-9
+)
 )
 
 (defalias
-en C-8
-ru C-9
 eng (tap-hold 200 195 (multi (layer-switch eng) @en) (layer-while-held switcher))
 rus (tap-hold 200 195 (multi (layer-switch rus) @ru) (layer-while-held switcher))
 nor (multi (layer-switch noremap) @en)
