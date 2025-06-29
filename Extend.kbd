@@ -12,12 +12,12 @@ _ _ _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
-@cap _
-_ _ _ _
+_ _
+_ _ _ @ralt
 )
 
 (deflayer switcher
-@nor @rus @eng _ _ _ _ _ _ _ _ _
+@nor @rus @eng _ _ _ _ _ _ mute vold volu
 _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
@@ -52,10 +52,6 @@ del  vold    mute volu  M-tab    tab pgup menu pgdn del
 @cw XX
 rctl rmet ralt @cw
 )
-(defalias
-en C-8
-ru C-9
-)
 )
 
 (platform (linux) ;; KDE Plasma
@@ -66,10 +62,6 @@ lmet lalt    lctl lsft  prnt     ret left down rght bspc
 del  vold    mute volu  M-w      tab pgup menu pgdn del
 @cw XX
 rctl rmet ralt @cw
-)
-(defalias
-en C-8
-ru C-9
 )
 )
 
@@ -82,18 +74,16 @@ bspc vold    mute volu  C-up     tab pgup mrtp pgdn C-d
 @cw XX
 rctl rmet ralt @cw
 )
-(defalias
-en C-S-8
-ru C-S-9
-)
 )
 
 (defalias
+en C-8
+ru C-9
 eng (tap-hold 200 195 (multi (layer-switch eng) @en) lctl)
 rus (tap-hold 200 195 (multi (layer-switch rus) @ru) (layer-while-held switcher))
 nor (multi (layer-switch noremap) @en)
 spc (tap-hold 200 195 spc (layer-while-held nav))
-cap (tap-hold 200 195 caps (layer-while-held switcher))
+ralt (tap-hold 200 195 ralt (layer-while-held switcher))
 
 ctl (multi lctl (layer-while-held eng))
 met (multi lmet (layer-while-held eng))
