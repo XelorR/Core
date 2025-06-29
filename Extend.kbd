@@ -4,7 +4,7 @@ q w e r t y u i o p
 a s d f g h j k l ;
 z x c v b n m , . /
 caps spc
-lctl lmet lalt
+lctl lmet lalt ralt
 )
 
 (deflayer noremap
@@ -13,16 +13,16 @@ _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
 @cap _
-_ _ _
+_ _ _ _
 )
 
 (deflayer switcher
-_ _ _ _ _ _ _ _ _ _ _ _
+@nor @rus @eng _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
-_ @nor @rus @eng _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
 _ _
-_ _ _
+_ _ _ _
 )
 
 (deflayer eng ;; Colemak
@@ -30,8 +30,8 @@ _ _ _ _ _ _ _ _ _ _ _ _
 _ _ f p g j l u y ;
 _ r s t d _ n e i o
 _ _ _ _ _ k _ _ _ _
-@rus @spc
-_ _ _
+@eng @spc
+_ _ _ @rus
 )
 
 (deflayer rus ;; Йцукенг
@@ -40,7 +40,7 @@ _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _
 @eng @spc
-@ctl @met @alt
+@ctl @met @alt @rus
 )
 
 (platform (win winiov2 wintercept) ;; Windows
@@ -50,7 +50,7 @@ A-f4 C-S-tab tab  C-tab lmet     esc home up   end  lrld
 lmet lalt    lctl lsft  prnt     ret left down rght bspc
 del  vold    mute volu  M-tab    tab pgup menu pgdn del
 @cw XX
-rctl rmet ralt
+rctl rmet ralt @cw
 )
 (defalias
 en C-8
@@ -65,7 +65,7 @@ C-q  C-S-tab tab  C-tab A-spc    esc home up   end  lrld
 lmet lalt    lctl lsft  prnt     ret left down rght bspc
 del  vold    mute volu  M-w      tab pgup menu pgdn del
 @cw XX
-rctl rmet ralt
+rctl rmet ralt @cw
 )
 (defalias
 en C-8
@@ -78,9 +78,9 @@ ru C-9
 f1   f2      f3   f4    f5       f6  f7   f8   f9   f10  f11 f12
 M-q  M-S-[   tab  M-S-] M-spc    esc M-left up M-rght lrld
 lctl lmet    lalt lsft  M-S-4    ret left down rght bspc
-bspc vold    mute volu  C-up     tab pgup menu pgdn del
+bspc vold    mute volu  C-up     tab pgup mrtp pgdn C-d
 @cw XX
-rctl rmet ralt
+rctl rmet ralt @cw
 )
 (defalias
 en C-S-8
@@ -89,7 +89,7 @@ ru C-S-9
 )
 
 (defalias
-eng (tap-hold 200 195 (multi (layer-switch eng) @en) (layer-while-held switcher))
+eng (tap-hold 200 195 (multi (layer-switch eng) @en) lctl)
 rus (tap-hold 200 195 (multi (layer-switch rus) @ru) (layer-while-held switcher))
 nor (multi (layer-switch noremap) @en)
 spc (tap-hold 200 195 spc (layer-while-held nav))
