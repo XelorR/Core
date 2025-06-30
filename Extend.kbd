@@ -94,6 +94,7 @@ cw (switch ((base-layer rus)) (caps-word-custom 2000 (a b c d e f g h i j k l m 
 )
 
 (defcfg concurrent-tap-hold yes)
+(platform (win winiov2 wintercept linux) ;; Linux, Windows
 (defchordsv2
 ;; left side
 (z x) C-z 200 all-released (switcher noremap nav)
@@ -117,4 +118,30 @@ cw (switch ((base-layer rus)) (caps-word-custom 2000 (a b c d e f g h i j k l m 
 (i o) (switch ((base-layer rus)) S-6 break () S-; break) 200 all-released (switcher noremap nav)
 (u o) (switch ((base-layer rus)) S-7 break () S-/ break) 200 all-released (switcher noremap nav)
 )
+)
 
+(platform (macos) ;; MacOS
+(defchordsv2
+;; left side
+(z x) M-z 200 all-released (switcher noremap nav)
+(z c) M-S-z 200 all-released (switcher noremap nav)
+(x v) M-x 200 all-released (switcher noremap nav)
+(x c) M-c 200 all-released (switcher noremap nav)
+(c v) M-v 200 all-released (switcher noremap nav)
+(z v) M-a 200 all-released (switcher noremap nav)
+(e r) M-s 200 all-released (switcher noremap nav)
+
+(w e) (switch ((base-layer rus)) S-2 break () S-' break) 200 all-released (switcher noremap nav)
+(r t) grv 200 all-released (switcher noremap nav)
+(w r) S-1 200 all-released (switcher noremap nav)
+
+(m ,) ] 200 all-released (switcher noremap nav)
+(, .) [ 200 all-released (switcher noremap nav)
+(m .) (macro S-9 25 S-0 25 left) 200 all-released (switcher noremap nav)
+(l ;) ' 200 all-released (switcher noremap nav)
+
+(u i) (switch ((base-layer rus)) S-4 break () ; break) 200 all-released (switcher noremap nav)
+(i o) (switch ((base-layer rus)) S-6 break () S-; break) 200 all-released (switcher noremap nav)
+(u o) (switch ((base-layer rus)) S-7 break () S-/ break) 200 all-released (switcher noremap nav)
+)
+)
