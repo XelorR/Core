@@ -79,15 +79,16 @@ rctl rmet ralt @cw
 (defalias
 en C-8
 ru C-9
-eng (tap-hold 200 195 (multi (layer-switch eng) @en) lctl)
-rus (tap-hold 200 195 (multi (layer-switch rus) @ru) (layer-while-held switcher))
-nor (multi (layer-switch noremap) @en)
-spc (tap-hold 200 195 spc (layer-while-held nav))
-ralt (tap-hold 200 195 ralt (layer-while-held switcher))
 
 ctl (multi lctl (layer-while-held eng))
 met (multi lmet (layer-while-held eng))
 alt (multi lalt (layer-while-held eng))
+
+eng (tap-hold 200 195 (multi (layer-switch eng) @en) @ctl)
+rus (tap-hold 200 195 (multi (layer-switch rus) @ru) (layer-while-held switcher))
+nor (multi (layer-switch noremap) @en)
+spc (tap-hold 200 195 spc (layer-while-held nav))
+ralt (tap-hold 200 195 ralt (layer-while-held switcher))
 
 cw (switch ((base-layer rus)) (caps-word-custom 2000 (a b c d e f g h i j k l m n o p q r s t u v w x y z , . ' ; [ ]) (bspc del)) break () (caps-word 2000) break )
 )
