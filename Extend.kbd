@@ -96,7 +96,6 @@ cw (switch ((base-layer rus)) (caps-word-custom 2000 (a b c d e f g h i j k l m 
 (defcfg concurrent-tap-hold yes)
 (platform (win winiov2 wintercept linux) ;; Linux, Windows
 (defchordsv2
-;; left side
 (z x) C-z 200 all-released (switcher noremap nav)
 (z c) C-y 200 all-released (switcher noremap nav)
 (x v) C-x 200 all-released (switcher noremap nav)
@@ -122,7 +121,6 @@ cw (switch ((base-layer rus)) (caps-word-custom 2000 (a b c d e f g h i j k l m 
 
 (platform (macos) ;; MacOS
 (defchordsv2
-;; left side
 (z x) M-z 200 all-released (switcher noremap nav)
 (z c) M-S-z 200 all-released (switcher noremap nav)
 (x v) M-x 200 all-released (switcher noremap nav)
