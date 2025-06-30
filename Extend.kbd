@@ -108,8 +108,10 @@ cw (switch ((base-layer rus)) (caps-word-custom 2000 (a b c d e f g h i j k l m 
 (r t) grv 200 all-released (switcher noremap nav)
 (w r) S-1 200 all-released (switcher noremap nav)
 
-(m ,) (switch ((base-layer rus)) ] break () S-2 break) 200 all-released (switcher noremap nav)
-(, .) (macro S-9 30 S-0 30 left) 200 all-released (switcher noremap nav)
+(m ,) ] 200 all-released (switcher noremap nav)
+(, .) [ 200 all-released (switcher noremap nav)
+(m .) (macro S-9 25 S-0 25 left) 200 all-released (switcher noremap nav)
+(l ;) ' 200 all-released (switcher noremap nav)
 
 (u i) (switch ((base-layer rus)) S-4 break () ; break) 200 all-released (switcher noremap nav)
 (i o) (switch ((base-layer rus)) S-6 break () S-; break) 200 all-released (switcher noremap nav)
