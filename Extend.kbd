@@ -92,3 +92,16 @@ ralt (tap-hold 200 195 ralt (layer-while-held switcher))
 
 cw (switch ((base-layer rus)) (caps-word-custom 2000 (a b c d e f g h i j k l m n o p q r s t u v w x y z , . ' ; [ ]) (bspc del)) break () (caps-word 2000) break )
 )
+
+(defcfg concurrent-tap-hold yes)
+(defchordsv2
+;; left side
+(z x) C-z 200 all-released (switcher noremap nav)
+(z c) C-y 200 all-released (switcher noremap nav)
+(x v) C-x 200 all-released (switcher noremap nav)
+(x c) C-c 200 all-released (switcher noremap nav)
+(c v) C-v 200 all-released (switcher noremap nav)
+(z v) C-a 200 all-released (switcher noremap nav)
+(e r) C-s 200 all-released (switcher noremap nav)
+)
+
